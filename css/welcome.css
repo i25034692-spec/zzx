@@ -1,0 +1,172 @@
+.welcome-page {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a3a4a 0%, #2C3E50 25%, #3A6073 50%, #1a5276 75%, #0e3d5c 100%);
+    text-align: center;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-page::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at 30% 50%, rgba(169,205,227,0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 50%, rgba(169,205,227,0.1) 0%, transparent 60%);
+    animation: welcomeGlow 8s ease-in-out infinite alternate;
+}
+
+@keyframes welcomeGlow {
+    0% { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(-30px, -20px) scale(1.05); }
+}
+
+.welcome-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.welcome-badge {
+    display: inline-block;
+    padding: 8px 28px;
+    border: 1px solid rgba(169,205,227,0.4);
+    color: #A9CDE3;
+    font-size: 13px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    background: rgba(169,205,227,0.08);
+    border-radius: 20px;
+}
+
+.welcome-title {
+    font-size: 100px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 12px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.welcome-subtitle {
+    font-size: 22px;
+    color: #A9CDE3;
+    font-weight: 300;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.welcome-desc {
+    font-size: 16px;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.welcome-btn {
+    display: inline-block;
+    padding: 18px 60px;
+    background: #A9CDE3;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.welcome-btn:hover {
+    background: #7ca4bd;
+    transform: translateY(-3px);
+}
+
+.floating-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.shape {
+    position: absolute;
+    opacity: 0.06;
+    background: #A9CDE3;
+}
+
+.shape-1 {
+    width: 300px;
+    height: 300px;
+    top: 10%;
+    right: -5%;
+    border-radius: 50%;
+    animation: float1 12s ease-in-out infinite;
+}
+
+.shape-2 {
+    width: 200px;
+    height: 200px;
+    bottom: 20%;
+    left: -3%;
+    border-radius: 50%;
+    animation: float2 10s ease-in-out infinite;
+}
+
+.shape-3 {
+    width: 150px;
+    height: 150px;
+    top: 30%;
+    left: 10%;
+    border-radius: 50%;
+    animation: float3 14s ease-in-out infinite;
+}
+
+@keyframes float1 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-30px, 20px); }
+}
+
+@keyframes float2 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(20px, -30px); }
+}
+
+@keyframes float3 {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(-15px, -25px); }
+}
+
+@media (max-width: 768px) {
+    .welcome-title {
+        font-size: 56px;
+        letter-spacing: 6px;
+    }
+    .welcome-subtitle {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+    .welcome-btn {
+        padding: 14px 40px;
+        font-size: 15px;
+    }
+    .welcome-email {
+        bottom: 25px;
+        font-size: 11px;
+    }
+}

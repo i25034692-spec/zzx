@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hainan - Home</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <a href="index.html" class="back-btn">&larr; Back to Welcome</a>
+
+    <div class="head">
+        <header>
+            <h1 class="logo">Hainan</h1>
+            <nav>
+                <a href="home.html">Home</a><a href="food.html">Cuisine</a><a href="scenery.html">Scenery</a>
+            </nav>
+        </header>
+    </div>
+
+    <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide" style="background-image: url(./images/ban1.png);">
+                <div class="slide-content">
+                    <h2>Discover Paradise</h2>
+                    <p>Hainan Island, China's southernmost tropical gem, where crystal-clear waters and golden sands create an unforgettable escape.</p>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url(./images/ban2.png);">
+                <div class="slide-content">
+                    <h2>Tropical Wonders</h2>
+                    <p>From lush rainforests to volcanic landscapes, Hainan offers breathtaking natural wonders waiting to be explored.</p>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url(./images/ban3.png);">
+                <div class="slide-content">
+                    <h2>Rich Cultural Heritage</h2>
+                    <p>Experience the vibrant traditions of Li and Miao ethnic groups, ancient pottery, and the timeless art of coconut carving.</p>
+                </div>
+            </div>
+            <div class="carousel-slide" style="background-image: url(./images/ban4.png);">
+                <div class="slide-content">
+                    <h2>Endless Summer</h2>
+                    <p>With year-round sunshine and average temperatures of 25 degrees, Hainan is your perfect year-round getaway destination.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-dots" id="carouselDots">
+            <button class="carousel-dot active" data-index="0"></button>
+            <button class="carousel-dot" data-index="1"></button>
+            <button class="carousel-dot" data-index="2"></button>
+            <button class="carousel-dot" data-index="3"></button>
+        </div>
+        <div class="carousel-arrows">
+            <button class="carousel-arrow" id="prevBtn">&#10094;</button>
+            <button class="carousel-arrow" id="nextBtn">&#10095;</button>
+        </div>
+    </div>
+
+    <div class="about">
+        <div class="content">
+            <h2 class="tit">ABOUT</h2>
+            <h1>Hainan: The Coconut Capital of China</h1>
+            <p>Hainan is China's largest and southernmost province, comprising the main Hainan Island along with over 200 smaller islands scattered across the South China Sea. Known as the "Eastern Hawaii," it has been designated as China's only Free Trade Port, rapidly evolving into a world-class tourist destination.</p>
+            <p>The island boasts a unique tropical monsoon climate with an average annual temperature of 25 degrees Celsius, making it an ideal year-round getaway. From the white sand beaches of Sanya to the misty peaks of Wuzhi Mountain, Hainan offers an extraordinary range of experiences for every traveler.</p>
+            
+            <a href="food.html" class="button">Explore Hainan Cuisine &rarr;</a>
+        </div>
+        <div class="image">
+            <img src="./images/1.png" alt="Hainan Island">
+        </div>
+    </div>
+
+    <div class="re">
+        <div class="rez">
+            <h2 class="tit">INTRODUCTION</h2>
+            <h1>Hainan Overview</h1>
+        </div>
+        <div class="ht">
+            <p>Hainan presents a fascinating blend of tropical splendor and cultural depth. The island features over 1,900 kilometers of coastline, pristine tropical rainforests covering more than half its area, and a rich tapestry of traditions from the indigenous Li people who have called this island home for over 3,000 years. From world-class diving spots to ancient volcanic landscapes, Hainan offers something extraordinary for every visitor.</p>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+    <div class="gallery">
+        <div class="gallery-container">
+            <div class="image-container">
+                <img src="./images/2.png" alt="Tropical Beach">
+                <div class="caption">Beaches</div>
+                <p class="desc">Pristine white sand beaches stretching along 1,900 km of coastline, with crystal-clear turquoise waters perfect for swimming and water sports.</p>
+            </div>
+            <div class="image-container">
+                <img src="./images/3.png" alt="Rainforest">
+                <div class="caption">Rainforests</div>
+                <p class="desc">Lush tropical rainforests covering over half the island, home to rare wildlife and exotic plant species found nowhere else on Earth.</p>
+            </div>
+            <div class="image-container">
+                <img src="./images/4.png" alt="Cultural Heritage">
+                <div class="caption">Culture</div>
+                <p class="desc">A vibrant mosaic of Li, Miao, and Hui ethnic traditions, featuring UNESCO-recognized Li brocade weaving and centuries-old folk arts.</p>
+            </div>
+            <div class="image-container">
+                <img src="./images/5.png" alt="Gastronomy">
+                <div class="caption">Gastronomy</div>
+                <p class="desc">World-famous Hainan cuisine featuring Wenchang Chicken, Hele Crab, and an abundance of fresh tropical fruits year-round.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-section">
+        <div class="tab-section-header">
+            <h2>Explore Hainan</h2>
+            <p>Everything you need to know about China's tropical paradise</p>
+        </div>
+        <div class="tab-nav">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="culture">Culture</button>
+            <button class="tab-btn" data-tab="tips">Travel Tips</button>
+        </div>
+
+        <div class="tab-panel active" id="panel-overview">
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-number">35,400</div>
+                    <div class="stat-label">Area (km2)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">10M+</div>
+                    <div class="stat-label">Population</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">300+</div>
+                    <div class="stat-label">Sunny Days / Year</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1,920</div>
+                    <div class="stat-label">Coastline (km)</div>
+                </div>
+            </div>
+            <div class="tab-content-text">
+                <h3>Island of Infinite Possibilities</h3>
+                <p>Hainan Island is located in the South China Sea, separated from the mainland by the Qiongzhou Strait. The province administers the main island along with the Paracel Islands, Spratly Islands, and Zhongsha Islands. The island's topography rises from coastal plains to the dramatic Wuzhi Mountain at 1,867 meters, creating diverse microclimates that support an extraordinary range of ecosystems.</p>
+                <p>The province has undergone rapid transformation since being designated as China's only Free Trade Port in 2020. Today, it offers visa-free entry for citizens of 59 countries, duty-free shopping, and a growing number of international hotels and resorts. The cities of Haikou (the provincial capital) and Sanya (the tourist hub) serve as the main gateways for visitors exploring the island's many attractions.</p>
+            </div>
+        </div>
+
+        <div class="tab-panel" id="panel-culture">
+            <div class="tab-content-text">
+                <h3>A Living Cultural Heritage</h3>
+                <p>Hainan's cultural identity is shaped by over three millennia of Li civilization, waves of mainland Chinese immigration, and centuries of maritime trade. This unique convergence has produced a cultural landscape unlike anywhere else in China, where ancient animist traditions coexist with Buddhist temples, Confucian academies, and Islamic mosques built by Hui traders centuries ago.</p>
+            </div>
+            <div class="culture-list">
+                <div class="culture-item">
+                    <h4>Li Brocade Weaving</h4>
+                    <p>A 3,000-year-old textile tradition recognized by UNESCO as Intangible Cultural Heritage. Li women create intricate patterns on backstrap looms using natural dyes, encoding myths and stories into every thread.</p>
+                </div>
+                <div class="culture-item">
+                    <h4>Qiong Opera</h4>
+                    <p>Hainan's premier traditional opera, originating in the Ming Dynasty. Performed in the Hainan dialect, it blends elegant melodies with vivid storytelling through song, dance, and drama.</p>
+                </div>
+                <div class="culture-item">
+                    <h4>Coconut Carving</h4>
+                    <p>A masterful craft transforming coconut shells into exquisite works of art. Each piece undergoes more than a dozen meticulous processes, blending Li ethnic motifs with marine-inspired designs.</p>
+                </div>
+                <div class="culture-item">
+                    <h4>Danzhou Diaosheng</h4>
+                    <p>A vibrant folk singing tradition from Danzhou featuring improvised male-female duets. During festivals, thousands of voices join together in spectacular communal celebrations.</p>
+                </div>
+                <div class="culture-item">
+                    <h4>Li Pottery</h4>
+                    <p>An ancient hand-molded pottery technique without a wheel, passed down through generations of Li women. These unglazed vessels preserve one of China's oldest ceramic traditions.</p>
+                </div>
+                <div class="culture-item">
+                    <h4>Folk Festivals</h4>
+                    <p>From the March Three Festival of the Li people to Dragon Boat races along coastal villages, Hainan's calendar is filled with celebrations honoring ancient customs.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-panel" id="panel-tips">
+            <div class="tab-content-text">
+                <h3>Essential Travel Information</h3>
+                <p>Planning a trip to Hainan? Here are the key things you need to know to make the most of your tropical island adventure, from getting there and finding accommodation to choosing the best activities and managing your budget.</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <h4>Getting There</h4>
+                    <p>Hainan has two international airports: Haikou Meilan (HAK) and Sanya Phoenix (SYX). Direct flights available from Beijing, Shanghai, Guangzhou, and major cities worldwide. High-speed rail connects Haikou and Sanya in about 1.5 hours.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Best Time to Visit</h4>
+                    <p>November to April offers the most comfortable weather with temperatures around 24-28 degrees Celsius. Summer (May-October) brings heat and humidity but also lush greenery and lower hotel prices.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Where to Stay</h4>
+                    <p>Sanya's Yalong Bay for luxury beachfront resorts, Haikou for city convenience and culture, Wanning for surfing, and Boao for a quiet retreat. Budget hostels available in all major towns.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Must-Try Activities</h4>
+                    <p>Surfing at Riyue Bay, diving at Wuzhizhou Island, hiking Wuzhi Mountain, exploring Yanoda Rainforest canopy walkway, and visiting the 108-meter Guanyin statue at Nanshan.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Duty-Free Shopping</h4>
+                    <p>As a Free Trade Port, Hainan offers duty-free shopping on luxury goods, cosmetics, and electronics. Annual duty-free quota is 100,000 RMB per person. Main outlets in Haikou and Sanya.</p>
+                </div>
+                <div class="tip-card">
+                    <h4>Budget Tips</h4>
+                    <p>Street food is affordable and delicious, with meals from 15-30 RMB. Public buses connect major towns. Visit during summer for lower hotel rates. Many natural attractions are free or low-cost.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>Hainan Province &mdash; i25034692@student.newinti.edu.my</footer>
+
+    <script>
+    (function() {
+        var track = document.getElementById('carouselTrack');
+        var dots = document.querySelectorAll('.carousel-dot');
+        var prevBtn = document.getElementById('prevBtn');
+        var nextBtn = document.getElementById('nextBtn');
+        var current = 0;
+        var total = 4;
+        var interval;
+
+        function goTo(index) {
+            current = ((index % total) + total) % total;
+            track.style.transform = 'translateX(-' + (current * 100) + '%)';
+            for (var i = 0; i < dots.length; i++) {
+                dots[i].classList.toggle('active', i === current);
+            }
+        }
+        function startAuto() {
+            interval = setInterval(function() { goTo(current + 1); }, 4500);
+        }
+        function resetAuto() {
+            clearInterval(interval);
+            startAuto();
+        }
+        prevBtn.addEventListener('click', function() { goTo(current - 1); resetAuto(); });
+        nextBtn.addEventListener('click', function() { goTo(current + 1); resetAuto(); });
+        for (var i = 0; i < dots.length; i++) {
+            (function(idx) {
+                dots[idx].addEventListener('click', function() { goTo(idx); resetAuto(); });
+            })(i);
+        }
+        startAuto();
+
+        var tabBtns = document.querySelectorAll('.tab-btn');
+        var panels = document.querySelectorAll('.tab-panel');
+        for (var j = 0; j < tabBtns.length; j++) {
+            (function(btn) {
+                btn.addEventListener('click', function() {
+                    for (var k = 0; k < tabBtns.length; k++) tabBtns[k].classList.remove('active');
+                    btn.classList.add('active');
+                    for (var m = 0; m < panels.length; m++) panels[m].classList.remove('active');
+                    document.getElementById('panel-' + btn.getAttribute('data-tab')).classList.add('active');
+                });
+            })(tabBtns[j]);
+        }
+    })();
+    </script>
+</body>
+</html>
